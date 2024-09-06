@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Footer.css';
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import sidlab from "../image/sidlab.png";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
 
         <div className="footer-logo">
-          <img src="/images/sidlabs-logo.png" alt="SidLabs Logo" />
+          <img src={sidlab} alt="SidLabs Logo" />
         </div>
 
         <div className="footer-content">
@@ -24,10 +25,12 @@ const Footer = () => {
         </div>
 
         <div className="footer-social">
-          <p>Chat with us!</p>
-          <a href="https://wa.me/123456789" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-whatsapp"> <FaWhatsapp/>  </i>
-          </a>
+          <div className='footer-wp'>
+            <p>Chat with us!</p>
+            <a href="https://wa.me/123456789" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-whatsapp"> <FaWhatsapp />  </i>
+            </a>
+          </div>
           <div className="footer-icons">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
