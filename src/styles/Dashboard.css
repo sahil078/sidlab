@@ -1,0 +1,135 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Transparent black */
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo-image {
+    height: 30px;
+}
+
+.dashboard-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.dashboard-nav ul li {
+    margin-left: 20px;
+}
+
+.dashboard-nav ul li a {
+    color: rgba(11, 151, 239, 0.992);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-nav ul li a:hover {
+    color: aliceblue;
+    background-color: rgba(12, 212, 247, 0.818);
+    border-radius: 5px;
+}
+
+/* Background Banner */
+.dashboard-banner {
+    background-image: url('../image/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner-text {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.banner-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 18px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 32px;
+    }
+
+    .banner-text p {
+        font-size: 16px;
+    }
+
+    .dashboard-nav ul {
+        flex-direction: column;
+    }
+
+    .dashboard-nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+    .banner-text h1 {
+      font-size: 28px;
+    }
+  
+    .banner-text p {
+      font-size: 15px;
+    }
+  
+    .dashboard-nav ul {
+      flex-direction: column;
+    }
+  
+    .dashboard-nav ul li {
+      margin-top: 10px;
+    }
+  
+    .dashboard-nav ul li a {
+      font-size: 13px;
+    }
+  
+    .dashboard-header {
+      padding: 10px;
+    }
+  
+    .logo-image {
+      height: 40px;
+    }
+  }
